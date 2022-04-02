@@ -21,7 +21,7 @@
          <Cursor fx:constant="HAND" />
       </cursor>
    </Button>
-   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="249.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#toLogin" prefHeight="62.0" prefWidth="222.0" style="-fx-background-color: #FF9900; -fx-background-radius: 50px; -fx-padding: 7px;" text="Log in" textAlignment="CENTER" textFill="WHITE">
+   <Button fx:id="loginBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="249.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#toLogin" prefHeight="62.0" prefWidth="222.0" style="-fx-background-color: #FF9900; -fx-background-radius: 50px; -fx-padding: 7px;" text="Log in" textAlignment="CENTER" textFill="WHITE">
       <font>
          <Font name="Ebrima Bold" size="36.0" />
       </font>

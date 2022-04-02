@@ -1,7 +1,6 @@
 package com.haomory.damess;
 
 import com.haomory.damess.scene.SceneName;
-import com.haomory.damess.scene.SceneSwitcher;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
