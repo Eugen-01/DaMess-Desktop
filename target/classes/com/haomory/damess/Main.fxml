@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.haomory.damess.MainController">
+   <ImageView fitHeight="276.0" fitWidth="244.0" layoutX="-15.0" layoutY="-82.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../Design/NameLogo.png" />
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor>
+   </ImageView>
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="216.0" layoutY="377.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="288.0" style="-fx-background-color: #02D417; -fx-background-radius: 50px; -fx-padding: 5px;" text="Register" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Ebrima Bold" size="40.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="249.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#toLogin" prefHeight="62.0" prefWidth="222.0" style="-fx-background-color: #FF9900; -fx-background-radius: 50px; -fx-padding: 7px;" text="Log in" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Ebrima Bold" size="36.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Label layoutX="210.0" layoutY="83.0" text="Welcome" textFill="#1952bc">
+      <font>
+         <Font name="Ebrima Bold" size="73.0" />
+      </font>
+   </Label>
+   <Label layoutX="164.0" layoutY="181.0" prefHeight="75.0" prefWidth="411.0" text="DaMess is a modern and beautiful messenger for any device" textAlignment="CENTER" textFill="#02d417" wrapText="true">
+      <font>
+         <Font name="Ebrima Bold" size="24.0" />
+      </font>
+   </Label>
+</AnchorPane>

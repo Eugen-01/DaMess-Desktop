@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: #ffffff; fx-padding: 20px;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.haomory.damess.LoginController">
+   <ImageView fitHeight="276.0" fitWidth="244.0" layoutX="-15.0" layoutY="-82.0" preserveRatio="true">
+      <Image url="@../../../Design/NameLogo.png" />
+      <viewport>
+         <Rectangle2D />
+      </viewport>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </ImageView>
+   <Pane cache="true" onMouseClicked="#toMain" prefHeight="78.0" prefWidth="232.0">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Pane>
+   <Label layoutX="262.0" layoutY="64.0" text="Login" textFill="#1952bc">
+      <font>
+         <Font name="Ebrima Bold" size="73.0" />
+      </font>
+   </Label>
+   <Button layoutX="229.0" layoutY="375.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="264.0" style="-fx-background-color: #FF9900; -fx-background-radius: 50px;" stylesheets="@Styles/Login.css" text="Log in" textFill="WHITE" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="227.0" AnchorPane.topAnchor="375.0">
+      <font>
+         <Font name="Ebrima Bold" size="36.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <TextField layoutX="228.0" layoutY="185.0" prefHeight="63.0" prefWidth="264.0" promptText="login" style="-fx-background-color: #DFDFDF; -fx-background-radius: 30px; -fx-padding: 15px;" stylesheets="@Styles/Login.css">
+      <font>
+         <Font name="Ebrima Bold" size="18.0" />
+      </font>
+   </TextField>
+   <PasswordField layoutX="228.0" layoutY="262.0" prefHeight="63.0" prefWidth="264.0" promptText="password" style="-fx-background-color: #DFDFDF; -fx-background-radius: 30px; -fx-padding: 15px;">
+      <font>
+         <Font name="Ebrima Bold" size="18.0" />
+      </font>
+   </PasswordField>
+   <CheckBox layoutX="302.0" layoutY="341.0" mnemonicParsing="false" stylesheets="@Styles/Login.css" text="Remember me">
+      <font>
+         <Font name="Ebrima Bold" size="13.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </CheckBox>
+</AnchorPane>
