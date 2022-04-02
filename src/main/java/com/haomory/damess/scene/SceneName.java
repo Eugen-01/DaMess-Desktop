@@ -1,4 +1,4 @@
-package com.haomory.damess;
+package com.haomory.damess.scene;
 
 public enum SceneName {
     MAIN("Main.fxml"), LOGIN("Login.fxml");

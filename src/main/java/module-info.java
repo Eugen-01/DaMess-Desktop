@@ -5,4 +5,6 @@ module com.haomory.damess {
 
     opens com.haomory.damess to javafx.fxml;
     exports com.haomory.damess;
+    exports com.haomory.damess.scene;
+    opens com.haomory.damess.scene to javafx.fxml;
 }

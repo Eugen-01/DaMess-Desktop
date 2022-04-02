@@ -1,5 +1,6 @@
 package com.haomory.damess;
 
+import com.haomory.damess.scene.SceneName;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
