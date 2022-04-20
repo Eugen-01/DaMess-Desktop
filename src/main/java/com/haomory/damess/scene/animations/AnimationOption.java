@@ -1,27 +1,10 @@
 package com.haomory.damess.scene.animations;
 
 public class AnimationOption {
-    private int toValueFade = 0;
-    private int fromValueFade = 10;
-    private int fromValueShow = 0;
-    private int toValueShow = 10;
-    private float durationInSec = 0.4f;
+    private int fromValue = 10;
+    private int toValue = 0;
+    private float durationInSec = 0.15f;
 
-    public int getFromValueShow() {
-        return fromValueShow;
-    }
-
-    public void setFromValueShow(int fromValueShow) {
-        this.fromValueShow = fromValueShow;
-    }
-
-    public int getToValueShow() {
-        return toValueShow;
-    }
-
-    public void setToValueShow(int toValueShow) {
-        this.toValueShow = toValueShow;
-    }
 
     public float getDurationInSec() {
         return durationInSec;
@@ -31,19 +14,19 @@ public class AnimationOption {
         this.durationInSec = durationInSec;
     }
 
-    public int getToValueFade() {
-        return toValueFade;
+    public void setFromValue(int fromValue) {
+        this.fromValue = fromValue;
     }
 
-    public void setToValueFade(int toValueFade) {
-        this.toValueFade = toValueFade;
+    public void setToValue(int toValue) {
+        this.toValue = toValue;
     }
 
-    public int getFromValueFade() {
-        return fromValueFade;
+    public int getFromValue() {
+        return fromValue;
     }
 
-    public void setFromValueFade(int fromValueFade) {
-        this.fromValueFade = fromValueFade;
+    public int getToValue() {
+        return toValue;
     }
 }

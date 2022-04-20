@@ -3,8 +3,6 @@ package com.haomory.damess.scene.animations;
 import javafx.animation.FadeTransition;
 
 public class Animation extends FadeAnimation{
-    private final FadeTransition fadeTransition = new FadeTransition();
-
     public Animation(AnimationOption animationOptions) {
         super(animationOptions);
     }
@@ -26,8 +24,4 @@ public class Animation extends FadeAnimation{
 //            node.setDisable(false);
 //        }
 //    }
-
-    public FadeTransition getFadeTransition() {
-        return fadeTransition;
-    }
 }

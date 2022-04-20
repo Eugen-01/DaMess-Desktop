@@ -22,12 +22,12 @@
          <Cursor fx:constant="HAND" />
       </cursor>
    </Pane>
-   <Label layoutX="262.0" layoutY="64.0" text="Login" textFill="#1952bc">
+   <Label fx:id="LoginLbl" layoutX="262.0" layoutY="64.0" text="Login" textFill="#1952bc">
       <font>
          <Font name="Ebrima Bold" size="73.0" />
       </font>
    </Label>
-   <Button layoutX="229.0" layoutY="375.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="264.0" style="-fx-background-color: #FF9900; -fx-background-radius: 50px;" stylesheets="@Styles/Login.css" text="Log in" textFill="WHITE" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="227.0" AnchorPane.topAnchor="375.0">
+   <Button fx:id="loginBtn" layoutX="229.0" layoutY="375.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="264.0" style="-fx-background-color: #FF9900; -fx-background-radius: 50px;" stylesheets="@Styles/Login.css" text="Log in" textFill="WHITE" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="227.0" AnchorPane.topAnchor="375.0">
       <font>
          <Font name="Ebrima Bold" size="36.0" />
       </font>
@@ -35,17 +35,17 @@
          <Cursor fx:constant="HAND" />
       </cursor>
    </Button>
-   <TextField layoutX="228.0" layoutY="185.0" prefHeight="63.0" prefWidth="264.0" promptText="login" style="-fx-background-color: #DFDFDF; -fx-background-radius: 30px; -fx-padding: 15px;" stylesheets="@Styles/Login.css">
+   <TextField fx:id="loginField" layoutX="228.0" layoutY="185.0" prefHeight="63.0" prefWidth="264.0" promptText="login" style="-fx-background-color: #DFDFDF; -fx-background-radius: 30px; -fx-padding: 15px;" stylesheets="@Styles/Login.css">
       <font>
          <Font name="Ebrima Bold" size="18.0" />
       </font>
    </TextField>
-   <PasswordField layoutX="228.0" layoutY="262.0" prefHeight="63.0" prefWidth="264.0" promptText="password" style="-fx-background-color: #DFDFDF; -fx-background-radius: 30px; -fx-padding: 15px;">
+   <PasswordField fx:id="passwordField" layoutX="228.0" layoutY="262.0" prefHeight="63.0" prefWidth="264.0" promptText="password" style="-fx-background-color: #DFDFDF; -fx-background-radius: 30px; -fx-padding: 15px;">
       <font>
          <Font name="Ebrima Bold" size="18.0" />
       </font>
    </PasswordField>
-   <CheckBox layoutX="302.0" layoutY="341.0" mnemonicParsing="false" stylesheets="@Styles/Login.css" text="Remember me">
+   <CheckBox fx:id="RmeCheckBox" layoutX="302.0" layoutY="341.0" mnemonicParsing="false" stylesheets="@Styles/Login.css" text="Remember me">
       <font>
          <Font name="Ebrima Bold" size="13.0" />
       </font>

@@ -5,9 +5,7 @@ import javafx.scene.Node;
 import javafx.util.Duration;
 
 public class FadeAnimation {
-//    private final FadeTransition fadeTransition = new FadeTransition();
     private final AnimationOption animationOptions;
-    private boolean finished = false;
 
     public FadeAnimation(AnimationOption animationOptions) {
         this.animationOptions = animationOptions;
@@ -16,29 +14,31 @@ public class FadeAnimation {
     public FadeAnimation() {
         animationOptions = new AnimationOption();
     }
+    private FadeTransition fadeTransition;
 
-    public void fadeObject(Node node) {
-        final FadeTransition fadeTransition = new FadeTransition();
+    public void fadeObject(Node node, AnimationOption animationOption) {
+        fadeTransition = new FadeTransition();
 
         fadeTransition.setNode(node);
-        fadeTransition.setFromValue(animationOptions.getFromValueFade());
-        fadeTransition.setToValue(animationOptions.getToValueFade());
+        fadeTransition.setFromValue(animationOption.getFromValue());
+        fadeTransition.setToValue(animationOption.getToValue());
 
         fadeTransition.setDuration(Duration.seconds(animationOptions.getDurationInSec()));
 
-        fadeTransition.onFinishedProperty().set(event -> {
-            finished = true;
-            node.setDisable(true);
-        });
-//El nu face animation in alte obiect in afara de primul
-
         fadeTransition.play();
 
+        if (node != null) {
+            node.setDisable(true);
+        }
     }
 
-    public void fadeAllObjects (Node[] nodes) {
+    public void fadeAnimationAllObjects (Node[] nodes, AnimationOption animationOption) {
         for (Node node : nodes) {
-            fadeObject(node);
+            fadeObject(node, animationOption);
         }
+    }
+
+    public FadeTransition getFadeTransition() {
+        return fadeTransition;
     }
 }

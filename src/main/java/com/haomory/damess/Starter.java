@@ -29,7 +29,9 @@ public class Starter extends Application {
                 Starter.class.getResourceAsStream("/Design/LogoIcon240.png"))
         ));
 
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(SceneName.MAIN.getFileName())));
+        Parent root = FXMLLoader.load(
+                Objects.requireNonNull(getClass().getResource(SceneName.MAIN.getFileName()))
+        );
 
         primaryStage.setScene(new Scene(root, WIDTH, HEIGHT));
 
